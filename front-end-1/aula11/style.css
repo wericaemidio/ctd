@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 2000px;
+}
+p{
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.div1 {
+    background-color: pink;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    
+    
+}
+.div2 {
+    background-color: rgb(233, 56, 86);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+}
+.div3 {
+    
+    position: fixed;
+    background-color: rgb(66, 12, 21);
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    bottom: 0;
+    position: fixed;
+}
+
