@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&family=Space+Mono&display=swap');
+
+ 
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: rgb(132, 231, 221);
+    
+
+}
+main{
+    background: rgba(255, 255, 255, 0.411);
+}
+
+p {
+    
+    margin: 0;
+    padding: 10px;
+    
+}
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    background-image: url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+
+}
+
+iframe{
+    
+
+ position: relative;
+ padding: left;
+ left: 25px;
+}
+
+
+footer{
+    margin-top: 200px;
+    background: rgb(132, 231, 221);
+    padding-top: 8px;
+    height: 40px;
+    text-align: center;
+    
+    
+}
+
+.curiosidades{
+    padding: 10px;
+    
+    height: 150px;
+    
+}
+
