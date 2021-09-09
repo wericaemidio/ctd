@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <form>
+        <img width="100"  src="logo.png" alt="">
+        <div>
+            <label for="name">Nome</label>
+            <input type="name" maxlength="15" id="name" name="name" placeholder="Digite o seu nome">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+        </div>
+        <div>
+            <label for="cpf">Cpf</label>
+            <input type="number" maxlength="11" id="cpf" name="cpf" placeholder="Somente números">
+        </div>
+        <div>
+            <label for="dataNasc">Data de nascimento</label>
+            <input type="date" id="dataNasc" name="dataNasc">
+        </div>
+        <div>
+            <label for="city">Cidade</label>
+            <select name="city" id="city">
+                <option value="saoPaulo">São Paulo</option>
+                <option value="saoRoque">São Roque</option>
+                <option value="mairinque">Mairinque</option>
+                <option value="aluminio">Alumínio</option>
+                <option value="itu">Itu</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="passwordConfirm">Repita sua Senha</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
+        </div>
+
+        
+
+
+
+        
+        <div>
+            <label for="">Alguma observação?</label>
+            <div>
+                <textarea name="coments" id="coments" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+        </div>
+        <button type="submit">Confirmar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+
+
+
+</body>
+</html>
