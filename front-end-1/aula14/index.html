@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <form>
+            <img width="100" src="bolinho.png">
+            <h1 class="titulo">Faça seu pedido:</h1>
+               
+            
+            <div class="corpoformulario">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="name" maxlength="15" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="number" id="telefone" name="telefone">
+                    </div>
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" name="retirada" id="retirada">
+                        <label for="retirada">Deseja retirar na loja?</label>
+                    </div>
+
+                <fieldset>
+                    <legend>Entrega</legend>
+                    <div>
+                        <label for="endereco">Endereço</label>
+                        <input type="text"  id="endereco" name="endereco">
+                    </div>
+
+                    <div>
+                        <label for="city">Cidade</label>
+                        <input list="citys" name="city" id="city">
+                            <datalist id="citys">
+                                <option value="Alumínio"></option>
+                                <option value="Mairinque"></option>
+                                <option value="São Roque"></option>
+                                <option value="Sorocaba"></option>
+                            </datalist>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Pedido</legend>
+                    <div>
+                        <input type="radio" name="option" id="option">
+                        <label for="option">Bolo</label>
+                        <input type="radio" name="option" id="option2">
+                        <label for="option">Torta</label>
+                        <input type="radio" name="option" id="option3">
+                        <label for="option">Donuts</label>
+                    </div>
+                    <div>
+                        <label for="sabor">Sabor</label>
+                        <select name="sabor" id="sabor">
+                            <option value="selecionar">Selecione</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="morango">Morango</option>
+                            <option value="sensacao">Sensação</option>
+                            <option value="limao">limão</option>
+                            <option value="maracuja">Maracujá</option>
+                        </select>
+                    </div> 
+                    <div>
+                        <label for="recheio">Recheio</label>
+                        <select name="recheio" id="recheio">
+                            <option value="selecionar">Selecione</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="morango">Morango</option>
+                            <option value="sensacao">Sensação</option>
+                            <option value="limao">limão</option>
+                            <option value="maracuja">Maracujá</option>
+                        </select>
+                    </div> 
+                    <div>
+                        <label for="cobertura">Cobertura</label>
+                        <select name="cobertura" id="cobertura">
+                            <option value="selecionar">Selecione</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="morango">Morango</option>
+                            <option value="sensacao">Sensação</option>
+                            <option value="limao">limão</option>
+                            <option value="maracuja">Maracujá</option>
+                        </select>
+                    </div> 
+                    <div>
+                        <input type="checkbox" name="add" id="add">
+                            <label for="add">Adicionar algo</label>
+                            <textarea name="add" id="add"></textarea>
+                        </div>
+                </fieldset>
+            
+
+                <fieldset>
+                    <legend>Pagamento</legend>
+                    <input type="radio" name="pagamento" id="pagamento">
+                    <label for="pagamento">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="pagamento">
+                    <label for="pagamento">Cartão de Crédito</label>
+                    <div>
+                        <div>
+                            <label for="cpf">CPF</label>
+                            <input type="number" id="cpf" name="cpf">
+                        </div>
+                        <label for="name">Nome</label>
+                        <input type="text" maxlength="15" id="name" name="name" placeholder="como escrito no cartão">
+                    </div>
+                    <div>
+                        <label for="numCartao">Número do Cartão</label>
+                        <input type="number" id="numCartao" name="numCartao">
+                    </div>
+                    <div>
+                        <label for="codigoseguranca">Digite o Código de Segurança</label>
+                        <input type="number" id="codigoseguranca" name="codigoseguranca">
+                    </div>
+                    <div>
+                        <label for="validade">Validade</label>
+                        <input type="date" id="validade" name="validade">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Observação</legend>
+                    <div>
+                        <label for="coments">Alguma observação?</label>
+                        <div>
+                            <textarea name="coments" id="coments" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                    </div>
+                    <button type="button">Confirmar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+            </div>   
+            
+                <button class="botao" type="button"> Finalizar pedido </button>
+           
+        </form>
+
+        
+    
+
+</body>
+</html>
