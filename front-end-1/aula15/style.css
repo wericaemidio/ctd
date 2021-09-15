@@ -1,0 +1,77 @@
+*{
+    outline: none;
+}
+
+h1:hover{
+    color: pink;
+}
+
+
+.checkbox{
+    transition-duration: .2s;
+}
+.checkbox:checked {
+    transform: scale(1.5);
+}
+
+p::first-letter{
+    color: rgb(255, 0, 106);
+    font-size: 30px;
+}
+
+tr:nth-child(2n){
+    color: blue;
+}
+
+tr td{
+    padding: 8px;
+    
+}
+
+input{
+    background-color: rgb(204, 172, 172);
+    border: none;
+    border: 1px solid;
+    margin: 10px;
+}
+
+input:hover{
+    padding: 5px;
+}
+
+input:enabled{
+    background-color: rgb(227, 200, 230);
+    
+}
+
+input:disabled{
+    background-color: rgb(165, 227, 243);
+    
+}
+
+input:focus{
+background-color: yellow;
+
+}
+
+
+
+
+button{
+    border: none;
+    padding: 12px 24px;
+    background-color: crimson;
+    color: white;
+    transition-duration: .5s;
+    margin: 10px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: rgb(172, 183, 231);
+    
+}
+
+
+
+
