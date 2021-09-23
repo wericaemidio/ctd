@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Pacifico&family=Roboto+Condensed:wght@300&family=Rubik+Beastly&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+    }
+    
+    
+    body header{
+        background-color: #F5B58A;
+        grid-area: header;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+       padding: 10px;
+       position: sticky;
+       font-family: 'Pacifico', cursive;
+       top: 0;
+       z-index: 2;
+
+        
+    }
+    
+        
+
+
+    body aside{
+        background-color: #606639;
+        grid-area: aside;
+    }
+    
+    /* nav{
+        margin: 20px;
+        text-align: justify;
+    } */
+
+    li, a{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+    
+    }
+
+
+    body main{
+        
+        grid-area: main;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        
+    }
+    
+    body section{
+        width: 700px;
+        text-align: justify;
+    }
+
+    body footer{
+        background-color: #93AD96;
+        grid-area: footer;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ @media(max-width: 425px){
+    body{
+        
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'header'
+        'aside'
+        'main'
+        'footer';
+    }
+
+    body aside{
+        position: sticky;
+    }
+
+    body aside ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    body main section{
+       
+        padding: 20px;
+    }
+
+    img{
+        position: relative;
+        max-width: 100%;
+        
+    
+    }
+   
+ }
