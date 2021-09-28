@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Koh+Santepheap:wght@700&family=Roboto+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #8C8A81;
+    height: 50px;
+    padding-top: 10px;
+    font-family: 'Koh Santepheap', cursive;
+    position: sticky;
+    top: 0;
+   
+    
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;    
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+li{
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+li:hover{
+    background-color:#ECDDD6 ;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    transform: scale(1.5);
+}
+
+
+main{
+    min-height: 100vh;
+}
+
+section:nth-child(1){
+    height: calc(100vh - 50px);
+    background-color:#ECDDD6 ;
+}
+
+section:nth-child(2){
+    background-color:#F2F1DF ;
+    height: 100vh;
+}
+
+article{
+    padding: 20px;
+}
+
+h1{
+    padding-bottom: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+p{
+    font-family: 'Roboto Mono', monospac;
+    text-align: justify;
+}
+
+footer{
+    background-color: #BDD1CA;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo{
+    display: flex;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media(max-width: 768px){
+    #conteudo{
+        flex-direction: column;
+       
+        
+    }
+    h1{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 768px){
+    #conteudo{
+        flex-direction: column;
+    }
+    h1{
+        text-align: center;
+    }
+
+}
